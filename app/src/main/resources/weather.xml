@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<infos>
+		<city id="0">
+			<temp>15℃/16℃</temp>
+			<weather>多云</weather>
+			<name>广东</name>
+			<pm>70</pm>	
+			<wind>0级</wind>
+			<clothes>2</clothes>
+		</city>
+		<city id="1">
+			<temp>10℃/12℃</temp>
+			<weather>晴天有云</weather>
+			<name>上海</name>
+			<pm>80</pm>
+			<wind>1级</wind>
+			<clothes>4</clothes>
+		</city>
+		<city id="2">
+			<temp>9℃/10℃</temp>
+			<weather>晴天</weather>
+			<name>北京</name>
+			<pm>98</pm>
+			<wind>2级</wind>
+			<clothes>5</clothes>
+		</city>
+		<city id="2">
+			<temp>9℃/13℃</temp>
+			<weather>晴天</weather>
+			<name>吉林</name>
+			<pm>56</pm>
+			<wind>3级</wind>
+			<clothes>4</clothes>
+		</city>
+	</infos>

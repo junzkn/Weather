@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jun.weather.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_bj"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:textSize="30sp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="80dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:id="@+id/img_weather"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_city"
+            android:layout_toEndOf="@+id/tv_city" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_weather"
+            android:textSize="20sp"
+            android:layout_below="@+id/img_weather"
+            android:layout_alignStart="@+id/img_weather"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_temp"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/img_weather"
+            android:layout_toRightOf="@+id/img_weather"
+            android:layout_width="200dp"
+            android:layout_height="50dp"  />
+        <TextView
+            android:id="@+id/tv_wind"
+            android:textSize="25sp"
+            android:layout_alignStart="@+id/tv_temp"
+            android:layout_below="@+id/tv_temp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"  />
+        <TextView
+            android:id="@+id/tv_pm"
+            android:textSize="25sp"
+            android:layout_alignStart="@+id/tv_wind"
+            android:layout_below="@+id/tv_wind"
+            android:layout_width="200dp"
+            android:layout_height="50dp"  />
+        <TextView
+            android:id="@+id/tv_clothes"
+            android:textSize="25sp"
+            android:layout_alignStart="@+id/tv_pm"
+            android:layout_below="@+id/tv_pm"
+            android:layout_width="200dp"
+            android:layout_height="50dp"  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_city_GD"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_city_selector"
+                android:text="广 东"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn_city_BJ"
+                android:background="@drawable/btn_city_selector"
+                android:text="北 京"
+                android:textSize="16sp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_city_SH"
+                android:background="@drawable/btn_city_selector"
+                android:text="上 海"
+                android:textSize="16sp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_city_JL"
+                android:background="@drawable/btn_city_selector"
+                android:text="吉 林"
+                android:textSize="16sp"
+                android:layout_width="70dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
